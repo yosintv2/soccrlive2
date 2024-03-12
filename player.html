@@ -202,6 +202,50 @@ Scroll Down to Watch Live Match👇👇  </a></b></p>
 
 
  
+<div id="popupIframe">
+  <iframe height="50"  width="100%" frameborder="0" id="iframe"></iframe>
+</div>
+
+<script>
+  var urls = [
+    ' https://yosintv2.github.io/tv/ads.html ',
+    // Add more URLs as needed
+  ];
+
+  var currentIndex = 0;
+  var displayTimer;
+
+  function startDisplay() {
+    var popupIframe = document.getElementById('popupIframe');
+    popupIframe.style.display = 'block';
+    popupIframe.classList.add('active');
+    loadNextUrl();
+    displayTimer = setInterval(function() {
+      loadNextUrl();
+    }, 35000);
+  }
+
+  function loadNextUrl() {
+    if (currentIndex < urls.length) {
+      var iframe = document.getElementById('iframe');
+      iframe.src = urls[currentIndex];
+      currentIndex++;
+    } else {
+      var popupIframe = document.getElementById('popupIframe');
+      popupIframe.classList.remove('active');
+      setTimeout(function() {
+        popupIframe.style.display = 'none';
+        clearInterval(displayTimer);
+      }, 300);
+    }
+  }
+
+  startDisplay();
+</script>
+
+ 
+
+ 
 <div><br/></div>
  <!--
 <b>DMCA Note:-</b>
