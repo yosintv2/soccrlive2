@@ -197,52 +197,6 @@ Scroll Down to Watch Live Match👇👇  </a></b></p>
 </script>
   
 <div><br /></div><div><b>Solana (SOL):</b> Solana is a high-performance blockchain platform designed for fast and secure decentralized applications and cryptocurrencies. It is known for its scalability and low transaction fees.</div><div><br /></div><div><b>Polkadot (DOT): </b>Polkadot is a multi-chain blockchain platform that enables different blockchains to transfer messages and value in a trust-free fashion. It aims to create a decentralized internet where independent blockchains can seamlessly interact.</div><div><br /></div><div><b>Chainlink (LINK):</b> Chainlink is a decentralized oracle network that enables smart contracts to securely interact with real-world data. It aims to bridge the gap between blockchain technology and real-world applications.</div><div><br /></div><div>In conclusion, these are the top 10 cryptocurrencies that you should know about. Whether you're looking to invest or simply curious about the world of cryptocurrency, these digital assets represent some of the most innovative and promising projects in the space.</div></div>
-
-
-
-
- 
-<div id="popupIframe">
-  <iframe height="50"  width="100%" frameborder="0" id="iframe"></iframe>
-</div>
-
-<script>
-  var urls = [
-    ' https://yosintv2.github.io/tv/ads.html ',
-    // Add more URLs as needed
-  ];
-
-  var currentIndex = 0;
-  var displayTimer;
-
-  function startDisplay() {
-    var popupIframe = document.getElementById('popupIframe');
-    popupIframe.style.display = 'block';
-    popupIframe.classList.add('active');
-    loadNextUrl();
-    displayTimer = setInterval(function() {
-      loadNextUrl();
-    }, 35000);
-  }
-
-  function loadNextUrl() {
-    if (currentIndex < urls.length) {
-      var iframe = document.getElementById('iframe');
-      iframe.src = urls[currentIndex];
-      currentIndex++;
-    } else {
-      var popupIframe = document.getElementById('popupIframe');
-      popupIframe.classList.remove('active');
-      setTimeout(function() {
-        popupIframe.style.display = 'none';
-        clearInterval(displayTimer);
-      }, 300);
-    }
-  }
-
-  startDisplay();
-</script>
-
  
 
  
